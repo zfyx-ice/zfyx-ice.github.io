@@ -3,9 +3,9 @@
 <html lang="zh-CN">
 <head>
     <meta charset="utf-8" />
-    <title>Hello World | 我的博客</title>
+    <title>Hello World | 昼有昨芳的小窝</title>
     <meta name="author" content="Yuki" />
-    <meta name="description" content="" />
+    <meta name="description" content="一个简陋的庇护所" />
     <meta name="keywords" content="" />
     <meta
         name="viewport"
@@ -49,13 +49,29 @@
 <link rel="stylesheet" href="/css/main.css" />
 
 <meta name="generator" content="Hexo 7.3.0"></head>
+<!-- 全局音乐播放器 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+<meting-js
+  server="netease"
+  type="playlist" 
+  id="6896349440"
+  fixed="true"
+  mini="true"
+  autoplay="false"
+  theme="#e74c3c">
+</meting-js>
+
+
 <body>
     <div id="layout">
         <transition name="fade">
             <div id="loading" v-show="loading">
                 <div id="loading-circle">
                     <h2>LOADING</h2>
-                    <p>加载过慢请开启缓存 浏览器默认开启</p>
+                    <p>少女祈祷中...</p>
                     <img src="/images/loading.gif" />
                 </div>
             </div>
@@ -63,7 +79,7 @@
         <div id="menu" :class="{ hidden: hiddenMenu, 'menu-color': menuColor}">
     <nav id="desktop-menu">
         <a class="title" href="/">
-            <span>我的博客</span>
+            <span>昼有昨芳的小窝</span>
         </a>
         
         <a href="/">
@@ -95,7 +111,7 @@
     <nav id="mobile-menu">
         <div class="title" @click="showMenuItems = !showMenuItems">
             <i class="fa-solid fa-bars fa-fw"></i>
-            <span>&emsp;我的博客</span>
+            <span>&emsp;昼有昨芳的小窝</span>
         </div>
         <transition name="slide">
             <div class="items" v-show="showMenuItems">
@@ -198,7 +214,7 @@
     <div id="footer-wrap">
         <div>
             &copy;
-            2022 - 2025 我的博客
+            2025 - 2025 昼有昨芳的小窝
             <span id="footer-icon">
                 <i class="fa-solid fa-font-awesome fa-fw"></i>
             </span>
