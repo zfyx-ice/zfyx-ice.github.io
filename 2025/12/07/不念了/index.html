@@ -3,7 +3,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="utf-8" />
-    <title>Tags: 学习 发电 | 昼有昨芳的小窝</title>
+    <title>学习与生活（二） | 昼有昨芳的小窝</title>
     <meta name="author" content="Yuki" />
     <meta name="description" content="一个简陋的庇护所" />
     <meta name="keywords" content="" />
@@ -37,6 +37,13 @@
 
 
 <script src="/js/lib/preview.js"></script>
+
+
+
+
+
+<script src="https://s4.zstatic.net/ajax/libs/gitalk/1.8.0/gitalk.min.js"></script>
+<link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/gitalk/1.8.0/gitalk.min.css" />
 
 
 
@@ -166,65 +173,58 @@
 </transition>
 
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
-            <div id="archives">
-    
-    <div class="categories-tags">
-        
-        
-        
-        <span>
-            <a href="/tags/%E5%AD%A6%E4%B9%A0/" style="background: #00bcd4">
-                <span class="icon">
-                    <i class="fa-solid fa-tags fa-fw"></i>
-                </span>
-                学习
-            </a>
+            <div class="article">
+    <div>
+        <h1>学习与生活（二）</h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2025/12/7
         </span>
         
         
-        
-        <span>
-            <a href="/tags/%E5%AD%A6%E4%B9%A0-%E5%8F%91%E7%94%B5/" style="background: linear-gradient(120deg, #9abbf7 0%, #ffbbf4 100%)">
-                <span class="icon">
-                    <i class="fa-solid fa-tags fa-fw"></i>
-                </span>
-                学习 发电
-            </a>
+        <span class="tags">
+            <span class="icon">
+                <i class="fa-solid fa-tags fa-fw"></i>
+            </span>
+            
+            
+            <span class="tag">
+                
+                <a href="/tags/%E5%AD%A6%E4%B9%A0/" style="color: #66ffff">
+                    学习
+                </a>
+            </span>
+            
         </span>
-        
-        
-        
         
     </div>
     
-    <div class="timeline">
-        <div class="timeline-tail"></div>
-        <div class="timeline-content">
-            <div class="item-time">2025/12/6</div>
-            <a href="/2025/12/06/%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%97%A5%E5%B8%B8/">
-                <h3>学习与日常</h3>
-            </a>
-            <div class="info">
-                
-                
-                <span class="tags">
-                    <span class="icon">
-                        <i class="fa-solid fa-tags fa-fw"></i>
-                    </span>
-                    
-                    
-                    <span class="tag">
-                        
-                        <a href="/tags/%E5%AD%A6%E4%B9%A0-%E5%8F%91%E7%94%B5/" style="color: #ffa2c4">
-                            学习 发电
-                        </a>
-                    </span>
-                    
-                </span>
-                
-            </div>
-        </div>
+    <div class="content" v-pre>
+        <p><a href="https://zfyx-ice.github.io/2025/12/06/%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%97%A5%E5%B8%B8/">前期提要</a></p>
+<blockquote>
+<p>上次的成绩不尽人意，这次感觉还是要寄</p>
+</blockquote>
+<p>我的预知果然是正确的，这次也是考到史上最低分了<br>当我走出考场时，我自以为这稳了<br>结果成绩出来后直接道心破碎了<br>物理选择题就对三个是人能写出来的吗？<br>这个生物还有点人样吗？<br><del>要不然我去学史地政吧</del><br><del>地理你带我走吧QAQ</del><br>该对的题也没写对，<br>老师上课讲的一到考场上就不会了，<br>只能以“这是培优联盟考”这个借口来安慰自己了。  </p>
+
     </div>
+    
+    
+    
+    <div id="comment">
+        <div id="gitalk-container"></div>
+    </div>
+    
+    
+    <div id="comment">
+        <div id="giscus-container" class="giscus"></div>
+    </div>
+    
+    
+    
     
 </div>
 
@@ -256,6 +256,43 @@
         
     </div>
     <script src="/js/main.js"></script>
+    
+    
+<script
+    src="https://giscus.app/client.js"
+    data-repo=""
+    data-repo-id=""
+    data-category=""
+    data-category-id=""
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="preferred_color_scheme"
+    data-lang=""
+    crossorigin
+    async
+></script>
+
+
+<script>
+    const gitalk = new Gitalk({
+        clientID: "",
+        clientSecret: "",
+        repo: "",
+        owner: "",
+        admin: "".split(","),
+        language: "",
+        id: location.pathname,
+        
+    })
+    gitalk.render("gitalk-container");
+</script>
+
+
+
+
     
 </body>
 </html>
