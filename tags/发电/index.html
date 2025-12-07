@@ -3,7 +3,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="utf-8" />
-    <title>Tags: 学习 发电 | 昼有昨芳的小窝</title>
+    <title>Tags: 发电 | 昼有昨芳的小窝</title>
     <meta name="author" content="Yuki" />
     <meta name="description" content="一个简陋的庇护所" />
     <meta name="keywords" content="" />
@@ -66,7 +66,7 @@
         <transition name="fade">
             <div id="loading" v-show="loading">
                 <div id="loading-circle">
-                    <h2>LOADING</h2>
+                    <h2>正努力加载中</h2>
                     <p>少女祈祷中...</p>
                     <img src="/images/%E5%B0%91%E5%A5%B3%E7%A5%88%E7%A5%B7%E4%B8%AD.gif" />
                 </div>
@@ -173,7 +173,7 @@
         
         
         <span>
-            <a href="/tags/%E5%AD%A6%E4%B9%A0/" style="background: #00bcd4">
+            <a href="/tags/%E5%AD%A6%E4%B9%A0/" style="background: #03a9f4">
                 <span class="icon">
                     <i class="fa-solid fa-tags fa-fw"></i>
                 </span>
@@ -184,11 +184,11 @@
         
         
         <span>
-            <a href="/tags/%E5%AD%A6%E4%B9%A0-%E5%8F%91%E7%94%B5/" style="background: linear-gradient(120deg, #9abbf7 0%, #ffbbf4 100%)">
+            <a href="/tags/%E5%8F%91%E7%94%B5/" style="background: linear-gradient(120deg, #9abbf7 0%, #ffbbf4 100%)">
                 <span class="icon">
                     <i class="fa-solid fa-tags fa-fw"></i>
                 </span>
-                学习 发电
+                发电
             </a>
         </span>
         
@@ -215,8 +215,15 @@
                     
                     <span class="tag">
                         
-                        <a href="/tags/%E5%AD%A6%E4%B9%A0-%E5%8F%91%E7%94%B5/" style="color: #ffa2c4">
-                            学习 发电
+                        <a href="/tags/%E5%AD%A6%E4%B9%A0/" style="color: #99ffff">
+                            学习
+                        </a>
+                    </span>
+                    
+                    <span class="tag">
+                        
+                        <a href="/tags/%E5%8F%91%E7%94%B5/" style="color: #00a596">
+                            发电
                         </a>
                     </span>
                     
@@ -244,6 +251,22 @@
         </div>
         
     </div>
+
+<!-- APlayer 全局音乐播放器 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
+
+<meting-js
+  server="netease"
+  type="playlist"
+  id="6896349440"
+  fixed="true"
+  mini="true"
+  autoplay="false"
+  theme="#2ecc71">
+</meting-js>
+
 </footer>
 
         </div>

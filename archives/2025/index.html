@@ -68,7 +68,7 @@
         <transition name="fade">
             <div id="loading" v-show="loading">
                 <div id="loading-circle">
-                    <h2>LOADING</h2>
+                    <h2>正努力加载中</h2>
                     <p>少女祈祷中...</p>
                     <img src="/images/%E5%B0%91%E5%A5%B3%E7%A5%88%E7%A5%B7%E4%B8%AD.gif" />
                 </div>
@@ -193,8 +193,15 @@
                         
                         <span class="tag">
                             
-                            <a href="/tags/%E5%AD%A6%E4%B9%A0-%E5%8F%91%E7%94%B5/" style="color: #99ffff">
-                                学习 发电
+                            <a href="/tags/%E5%AD%A6%E4%B9%A0/" style="color: #ff7d73">
+                                学习
+                            </a>
+                        </span>
+                        
+                        <span class="tag">
+                            
+                            <a href="/tags/%E5%8F%91%E7%94%B5/" style="color: #ffa2c4">
+                                发电
                             </a>
                         </span>
                         
@@ -204,12 +211,12 @@
             </div>
         </div>
         
-        <div class="timeline" data-title="学习与生活（二）">
+        <div class="timeline" data-title="学习与日常（二）">
             <div class="timeline-tail"></div>
             <div class="timeline-content">
                 <div class="item-time">2025/12/7</div>
                 <a href="/2025/12/07/%E4%B8%8D%E5%BF%B5%E4%BA%86/">
-                    <h3>学习与生活（二）</h3>
+                    <h3>学习与日常（二）</h3>
                 </a>
                 <div class="info">
                     
@@ -222,7 +229,7 @@
                         
                         <span class="tag">
                             
-                            <a href="/tags/%E5%AD%A6%E4%B9%A0/" style="color: #ffa2c4">
+                            <a href="/tags/%E5%AD%A6%E4%B9%A0/" style="color: #66ffff">
                                 学习
                             </a>
                         </span>
@@ -252,6 +259,22 @@
         </div>
         
     </div>
+
+<!-- APlayer 全局音乐播放器 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
+
+<meting-js
+  server="netease"
+  type="playlist"
+  id="6896349440"
+  fixed="true"
+  mini="true"
+  autoplay="false"
+  theme="#2ecc71">
+</meting-js>
+
 </footer>
 
         </div>

@@ -3,7 +3,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="utf-8" />
-    <title>学习与生活（二） | 昼有昨芳的小窝</title>
+    <title>学习与日常（二） | 昼有昨芳的小窝</title>
     <meta name="author" content="Yuki" />
     <meta name="description" content="一个简陋的庇护所" />
     <meta name="keywords" content="" />
@@ -42,9 +42,6 @@
 
 
 
-<script src="https://s4.zstatic.net/ajax/libs/gitalk/1.8.0/gitalk.min.js"></script>
-<link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/gitalk/1.8.0/gitalk.min.css" />
-
 
 
 
@@ -73,7 +70,7 @@
         <transition name="fade">
             <div id="loading" v-show="loading">
                 <div id="loading-circle">
-                    <h2>LOADING</h2>
+                    <h2>正努力加载中</h2>
                     <p>少女祈祷中...</p>
                     <img src="/images/%E5%B0%91%E5%A5%B3%E7%A5%88%E7%A5%B7%E4%B8%AD.gif" />
                 </div>
@@ -175,7 +172,7 @@
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
             <div class="article">
     <div>
-        <h1>学习与生活（二）</h1>
+        <h1>学习与日常（二）</h1>
     </div>
     <div class="info">
         <span class="date">
@@ -208,20 +205,12 @@
 <blockquote>
 <p>上次的成绩不尽人意，这次感觉还是要寄</p>
 </blockquote>
-<p>我的预知果然是正确的，这次也是考到史上最低分了<br>当我走出考场时，我自以为这稳了<br>结果成绩出来后直接道心破碎了<br>物理选择题就对三个是人能写出来的吗？<br>这个生物还有点人样吗？<br><del>要不然我去学史地政吧</del><br><del>地理你带我走吧QAQ</del><br>该对的题也没写对，<br>老师上课讲的一到考场上就不会了，<br>只能以“这是培优联盟考”这个借口来安慰自己了。  </p>
+<p><em>果然是寄了</em><br>我的预知果然是正确的，这次也是考到史上最低分了<br>当我走出考场时，我自以为这稳了<br>结果成绩出来后直接道心破碎了<br>物理选择题就对三个是人能写出来的吗？<br>这个生物还有点人样吗？<br><del>要不然我去学史地政吧</del><br><del>地理你带我走吧QAQ</del><br>该对的题也没写对，<br>老师上课讲的一到考场上就不会了，<br>只能以“这是培优联盟考”这个借口来安慰自己了。  </p>
 
     </div>
     
     
     
-    <div id="comment">
-        <div id="gitalk-container"></div>
-    </div>
-    
-    
-    <div id="comment">
-        <div id="giscus-container" class="giscus"></div>
-    </div>
     
     
     
@@ -244,6 +233,22 @@
         </div>
         
     </div>
+
+<!-- APlayer 全局音乐播放器 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
+
+<meting-js
+  server="netease"
+  type="playlist"
+  id="6896349440"
+  fixed="true"
+  mini="true"
+  autoplay="false"
+  theme="#2ecc71">
+</meting-js>
+
 </footer>
 
         </div>
@@ -258,37 +263,6 @@
     <script src="/js/main.js"></script>
     
     
-<script
-    src="https://giscus.app/client.js"
-    data-repo=""
-    data-repo-id=""
-    data-category=""
-    data-category-id=""
-    data-mapping="pathname"
-    data-strict="0"
-    data-reactions-enabled="1"
-    data-emit-metadata="0"
-    data-input-position="bottom"
-    data-theme="preferred_color_scheme"
-    data-lang=""
-    crossorigin
-    async
-></script>
-
-
-<script>
-    const gitalk = new Gitalk({
-        clientID: "",
-        clientSecret: "",
-        repo: "",
-        owner: "",
-        admin: "".split(","),
-        language: "",
-        id: location.pathname,
-        
-    })
-    gitalk.render("gitalk-container");
-</script>
 
 
 

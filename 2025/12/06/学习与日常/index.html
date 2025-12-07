@@ -42,9 +42,6 @@
 
 
 
-<script src="https://s4.zstatic.net/ajax/libs/gitalk/1.8.0/gitalk.min.js"></script>
-<link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/gitalk/1.8.0/gitalk.min.css" />
-
 
 
 
@@ -73,7 +70,7 @@
         <transition name="fade">
             <div id="loading" v-show="loading">
                 <div id="loading-circle">
-                    <h2>LOADING</h2>
+                    <h2>正努力加载中</h2>
                     <p>少女祈祷中...</p>
                     <img src="/images/%E5%B0%91%E5%A5%B3%E7%A5%88%E7%A5%B7%E4%B8%AD.gif" />
                 </div>
@@ -194,8 +191,15 @@
             
             <span class="tag">
                 
-                <a href="/tags/%E5%AD%A6%E4%B9%A0-%E5%8F%91%E7%94%B5/" style="color: #00a596">
-                    学习 发电
+                <a href="/tags/%E5%AD%A6%E4%B9%A0/" style="color: #ffa2c4">
+                    学习
+                </a>
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/%E5%8F%91%E7%94%B5/" style="color: #ff7d73">
+                    发电
                 </a>
             </span>
             
@@ -204,24 +208,16 @@
     </div>
     
     <div class="content" v-pre>
-        <p><strong>最近没有什么大事发生，但仍感到心力憔悴</strong><br><em>期中考试的余热还未褪去，接下来上场的是培优联盟考</em><br>#上次的成绩不尽人意，这次我感觉还是要寄#<br>  当我坐在考场时，那时的我会想些什么？<br>是在后悔前些天学习的浑浑噩噩，还是想着家里的小丛雨在等着我呢？我想应该是后者吧。<br>我从小到大都会听到一个词：学习态度，但没人确切地告诉我，这究竟是什么？<br>就像人生下来就会喝母乳，这个道理可能也是人们生来就懂得的吧！<br>我自认为我是一个极不自律的人，每当回到家之后，我总会放下手中的作业去休息，就如同我现在在做的一般。</p>
+        <p><strong>最近没有什么大事发生，但仍感到心力憔悴</strong><br><em>期中考试的余热还未褪去，接下来上场的是培优联盟考</em><br><del>上次的成绩不尽人意，这次我感觉还是要寄</del><br>  当我坐在考场时，那时的我会想些什么？<br>是在后悔前些天学习的浑浑噩噩，还是想着家里的小丛雨在等着我呢？我想应该是后者吧。<br>我从小到大都会听到一个词：学习态度，但没人确切地告诉我，这究竟是什么？<br>就像人生下来就会喝母乳，这个道理可能也是人们生来就懂得的吧！<br>我自认为我是一个极不自律的人，每当回到家之后，我总会放下手中的作业去休息，就如同我现在在做的一般。</p>
 <p>  家就像一个避风港，当我从早上六点半出门到晚上十点半回家后，我为什么不能美美地休息，而是要持续这白天的炼狱？<br>学校就像一座监狱，教室就是一间关押着五十个人的牢房，课堂是不坐满四十五分钟就不能出去的房间<br>我听着台上的风声雨声，不由得为自己的迷茫而苦恼。</p>
 <p>  也许，这种心力憔悴并不是因为考试、作业、学习本身，而是持续的压力和期望不断累积，最终让人无力喘息。<br>我羡慕那些可以坚定目标、保持热情的人，但自己却常常陷入消极的情绪中。<br>在家里，我用网络逃避现实，可一旦翻开书本，压力又扑面而来。</p>
 <p>  或许，成长就是在一遍遍失落和振作之间，学着与自己的情绪和不足和解。也许有一天，我会找到属于自己的节奏和方向。但在此之前，只能继续在这日复一日的心力交瘁与希望之中悄悄成长。</p>
-<p>注：本文初发表与<a href="https://zfyx-ice.github.io/myBlog/post/xue-xi-yu-ri-chang.html">我的另一个博客</a><br>我在此转载是为了更新后续</p>
+<p>注：本文初发表于<a href="https://zfyx-ice.github.io/myBlog/post/xue-xi-yu-ri-chang.html">我的另一个博客</a><br>我在此转载是为了更新后续</p>
 
     </div>
     
     
     
-    <div id="comment">
-        <div id="gitalk-container"></div>
-    </div>
-    
-    
-    <div id="comment">
-        <div id="giscus-container" class="giscus"></div>
-    </div>
     
     
     
@@ -244,6 +240,22 @@
         </div>
         
     </div>
+
+<!-- APlayer 全局音乐播放器 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
+
+<meting-js
+  server="netease"
+  type="playlist"
+  id="6896349440"
+  fixed="true"
+  mini="true"
+  autoplay="false"
+  theme="#2ecc71">
+</meting-js>
+
 </footer>
 
         </div>
@@ -258,37 +270,6 @@
     <script src="/js/main.js"></script>
     
     
-<script
-    src="https://giscus.app/client.js"
-    data-repo=""
-    data-repo-id=""
-    data-category=""
-    data-category-id=""
-    data-mapping="pathname"
-    data-strict="0"
-    data-reactions-enabled="1"
-    data-emit-metadata="0"
-    data-input-position="bottom"
-    data-theme="preferred_color_scheme"
-    data-lang=""
-    crossorigin
-    async
-></script>
-
-
-<script>
-    const gitalk = new Gitalk({
-        clientID: "",
-        clientSecret: "",
-        repo: "",
-        owner: "",
-        admin: "".split(","),
-        language: "",
-        id: location.pathname,
-        
-    })
-    gitalk.render("gitalk-container");
-</script>
 
 
 
